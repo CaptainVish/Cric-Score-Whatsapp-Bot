@@ -54,7 +54,7 @@ if __name__ == "__main__":
     send_message=match_obj.get_unique_id()
     print(send_message)
     from twilio.rest import Client
-    account_sid = 'AC4818f32149e8e1238479e27a466353f5' # Your Account SID from twilio.com/console
-    auth_token = '2da0741cf8a02fd6a78e7d9e5acde64b'    # Your Auth Token from twilio.com/console
+    account_sid = 'AC4818f32149xxxxxxx' # Your Account SID from twilio.com/console
+    auth_token = '2da0741cf8a02xxxxxxx'    # Your Auth Token from twilio.com/console
     client = Client(account_sid, auth_token)
     message = client.messages.create( body=send_message, from_='whatsapp:+14155238886', to='whatsapp:+91xxxxxxxxxx' )
