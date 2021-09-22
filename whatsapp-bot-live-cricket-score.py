@@ -22,7 +22,6 @@ class ScoreGet:
         for i in resp_dict['matches']:
             if (i['team-1'] == "Auckland" or i['team-2'] == "India") and i['matchStarted']:
                 todays_date = datetime.today().strftime('%Y-%m-%d')
-                todays_date = "2021-01-23"
                 if todays_date == i['date'].split("T")[0]:
                     uid_found=1
                     self.unique_id=i['unique_id']
